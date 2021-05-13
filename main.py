@@ -162,8 +162,8 @@ def checkRX6900XT():
 # This function checks if it's the specified hot time where a drop could happen. (Wed-Fri 5-9 PM CEST)
 # It's based on current local time
 def checkTime():
-    now = time.localtime()      # Get current local time
     while True:
+        now = time.localtime()      # Get current local time
         # Check if it's Wed-Fri but not hot phase -> Sleep till it is time (5-9PM)
         if (0 <= now.tm_hour < 16 or now.tm_hour > 21) and now.tm_wday in [2, 3, 4]:
             print('It\'s {:d}:{:d}, so won\'t check now'.format(now.tm_hour, now.tm_min))
