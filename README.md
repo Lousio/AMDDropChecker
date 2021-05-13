@@ -8,3 +8,5 @@ You can change the time period between checks.
 
 Future changes:
 Make it possible to choose which GPU's to look for by CLI arguments
+
+DOES NOT WORK DUE TO AMD PATCHING THE LINKS
